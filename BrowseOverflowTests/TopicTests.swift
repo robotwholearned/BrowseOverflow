@@ -11,12 +11,12 @@ import XCTest
 class TopicTests: XCTestCase {
   
   func testTopicExists(){
-    var newTopic = Topic()
+    var newTopic = Topic(name: "iPhone", tag: "iphone")
     XCTAssertNotNil(newTopic, "Should be able to create a Topic instance")
   }
   
   func testThatATopicCanBeNamed(){
-    var newTopic = Topic(name: "iPhone")
+    var newTopic = Topic(name: "iPhone", tag: "iphone")
     XCTAssertEqualObjects(newTopic.name, "iPhone", "should be able to name a topic")
   }
   func testThatTopicHasATag(){

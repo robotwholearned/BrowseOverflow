@@ -9,15 +9,9 @@
 import Foundation
 
 class Topic{
-
-  var name = ""
-  var tag = ""
+  var name: String
+  var tag: String
   
-  init(){
-  }
-  init(name: String){
-    self.name = name
-  }
   init(name: String, tag: String){
     self.name = name
     self.tag = tag

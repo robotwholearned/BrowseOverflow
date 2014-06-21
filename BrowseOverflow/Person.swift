@@ -10,11 +10,11 @@ import Foundation
 
 class Person{
   var name : String
-  var avatarLocation : String
+  var avatarLocation : NSURL
   
   init(name: String, avatarLocation: String){
     self.name = name
-    self.avatarLocation = avatarLocation
+    self.avatarLocation = NSURL(string: avatarLocation)
   }
   
 }

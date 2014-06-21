@@ -12,7 +12,6 @@
 		536CF689195526A800AA16A4 /* DetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 536CF688195526A800AA16A4 /* DetailViewController.swift */; };
 		536CF68C195526A800AA16A4 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 536CF68A195526A800AA16A4 /* Main.storyboard */; };
 		536CF68E195526A800AA16A4 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 536CF68D195526A800AA16A4 /* Images.xcassets */; };
-		536CF69A195526A800AA16A4 /* BrowseOverflowTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 536CF699195526A800AA16A4 /* BrowseOverflowTests.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -35,7 +34,6 @@
 		536CF68D195526A800AA16A4 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
 		536CF693195526A800AA16A4 /* BrowseOverflowTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = BrowseOverflowTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		536CF698195526A800AA16A4 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		536CF699195526A800AA16A4 /* BrowseOverflowTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BrowseOverflowTests.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -98,7 +96,6 @@
 		536CF696195526A800AA16A4 /* BrowseOverflowTests */ = {
 			isa = PBXGroup;
 			children = (
-				536CF699195526A800AA16A4 /* BrowseOverflowTests.swift */,
 				536CF697195526A800AA16A4 /* Supporting Files */,
 			);
 			path = BrowseOverflowTests;
@@ -221,7 +218,6 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				536CF69A195526A800AA16A4 /* BrowseOverflowTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

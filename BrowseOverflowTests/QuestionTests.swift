@@ -12,7 +12,9 @@ class QuestionTests: XCTestCase {
 
   func testQuestionHasDate(){
     var question = Question()
-    XCTAssertNotNil(question.date, "Question needs to provide its date")
+    var testDate = NSDate(timeIntervalSince1970: 0)
+    question.date = testDate
+    XCTAssertEqualObjects(question.date, testDate, "Questions needs to provide a date")
   }
 
 }

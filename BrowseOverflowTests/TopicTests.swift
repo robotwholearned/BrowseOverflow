@@ -19,6 +19,8 @@ class TopicTests: XCTestCase {
     var newTopic = Topic(name: "iPhone")
     XCTAssertEqualObjects(newTopic.name, "iPhone", "should be able to name a topic")
   }
-
-
+  func testThatTopicHasATag(){
+    var newTopic = Topic(name: "iPhone", tag: "iphone")
+    XCTAssertEqualObjects(newTopic.tag, "iphone", "topics should have tags")
+  }
 }

@@ -8,7 +8,7 @@
 
 import XCTest
 
-class PearsonTests: XCTestCase {
+class PersonTests: XCTestCase {
   
   
   override func setUp() {

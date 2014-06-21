@@ -11,6 +11,7 @@ import Foundation
 class Topic{
   var name: String
   var tag: String
+  var recentQuestions: Array<AnyObject> = []
   
   init(name: String, tag: String){
     self.name = name

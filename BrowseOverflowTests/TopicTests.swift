@@ -19,4 +19,8 @@ class TopicTests: XCTestCase {
   func testThatTopicHasATag(){
     XCTAssertEqualObjects(newTopic.tag, "iphone", "topics should have tags")
   }
+  //'is' test is always true, because of type saftey in Swift *yay!
+//  func testForAListOfQuestions(){
+//    XCTAssertTrue(newTopic.recentQuestions is Array, "Topics should provide a list of recent questions")
+//  }
 }

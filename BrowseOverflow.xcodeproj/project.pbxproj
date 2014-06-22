@@ -12,6 +12,15 @@
 		536CF689195526A800AA16A4 /* DetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 536CF688195526A800AA16A4 /* DetailViewController.swift */; };
 		536CF68C195526A800AA16A4 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 536CF68A195526A800AA16A4 /* Main.storyboard */; };
 		536CF68E195526A800AA16A4 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 536CF68D195526A800AA16A4 /* Images.xcassets */; };
+		536CF6A91955344200AA16A4 /* TopicTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 536CF6A81955344200AA16A4 /* TopicTests.swift */; };
+		536CF6AB195535DB00AA16A4 /* Topic.swift in Sources */ = {isa = PBXBuildFile; fileRef = 536CF6AA195535DB00AA16A4 /* Topic.swift */; };
+		536CF6AC195535DB00AA16A4 /* Topic.swift in Sources */ = {isa = PBXBuildFile; fileRef = 536CF6AA195535DB00AA16A4 /* Topic.swift */; };
+		536CF6AE1955446000AA16A4 /* QuestionTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 536CF6AD1955446000AA16A4 /* QuestionTests.swift */; };
+		536CF6B21955456300AA16A4 /* Question.swift in Sources */ = {isa = PBXBuildFile; fileRef = 536CF6B11955456300AA16A4 /* Question.swift */; };
+		536CF6B31955456300AA16A4 /* Question.swift in Sources */ = {isa = PBXBuildFile; fileRef = 536CF6B11955456300AA16A4 /* Question.swift */; };
+		536CF6B519554AAE00AA16A4 /* PersonTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 536CF6B419554AAE00AA16A4 /* PersonTests.swift */; };
+		536CF6B719554BF400AA16A4 /* Person.swift in Sources */ = {isa = PBXBuildFile; fileRef = 536CF6B619554BF400AA16A4 /* Person.swift */; };
+		536CF6B819554BF400AA16A4 /* Person.swift in Sources */ = {isa = PBXBuildFile; fileRef = 536CF6B619554BF400AA16A4 /* Person.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -23,6 +32,20 @@
 			remoteInfo = BrowseOverflow;
 		};
 		536CF6A31955312300AA16A4 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 536CF677195526A800AA16A4 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 536CF67E195526A800AA16A4;
+			remoteInfo = BrowseOverflow;
+		};
+		536CF6A51955312300AA16A4 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 536CF677195526A800AA16A4 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 536CF67E195526A800AA16A4;
+			remoteInfo = BrowseOverflow;
+		};
+		536CF6AF195544A100AA16A4 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = 536CF677195526A800AA16A4 /* Project object */;
 			proxyType = 1;
@@ -41,6 +64,13 @@
 		536CF68D195526A800AA16A4 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
 		536CF693195526A800AA16A4 /* BrowseOverflowTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = BrowseOverflowTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		536CF698195526A800AA16A4 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		536CF6A71955344200AA16A4 /* BrowseOverflowTests-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "BrowseOverflowTests-Bridging-Header.h"; sourceTree = "<group>"; };
+		536CF6A81955344200AA16A4 /* TopicTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TopicTests.swift; sourceTree = "<group>"; };
+		536CF6AA195535DB00AA16A4 /* Topic.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Topic.swift; sourceTree = "<group>"; };
+		536CF6AD1955446000AA16A4 /* QuestionTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = QuestionTests.swift; sourceTree = "<group>"; };
+		536CF6B11955456300AA16A4 /* Question.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Question.swift; sourceTree = "<group>"; };
+		536CF6B419554AAE00AA16A4 /* PersonTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = PersonTests.swift; path = BrowseOverflowTests/PersonTests.swift; sourceTree = SOURCE_ROOT; };
+		536CF6B619554BF400AA16A4 /* Person.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Person.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -83,6 +113,9 @@
 			isa = PBXGroup;
 			children = (
 				536CF684195526A800AA16A4 /* AppDelegate.swift */,
+				536CF6B619554BF400AA16A4 /* Person.swift */,
+				536CF6AA195535DB00AA16A4 /* Topic.swift */,
+				536CF6B11955456300AA16A4 /* Question.swift */,
 				536CF686195526A800AA16A4 /* MasterViewController.swift */,
 				536CF688195526A800AA16A4 /* DetailViewController.swift */,
 				536CF68A195526A800AA16A4 /* Main.storyboard */,
@@ -103,6 +136,9 @@
 		536CF696195526A800AA16A4 /* BrowseOverflowTests */ = {
 			isa = PBXGroup;
 			children = (
+				536CF6B419554AAE00AA16A4 /* PersonTests.swift */,
+				536CF6AD1955446000AA16A4 /* QuestionTests.swift */,
+				536CF6A81955344200AA16A4 /* TopicTests.swift */,
 				536CF697195526A800AA16A4 /* Supporting Files */,
 			);
 			path = BrowseOverflowTests;
@@ -111,6 +147,7 @@
 		536CF697195526A800AA16A4 /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
+				536CF6A71955344200AA16A4 /* BrowseOverflowTests-Bridging-Header.h */,
 				536CF698195526A800AA16A4 /* Info.plist */,
 			);
 			name = "Supporting Files";
@@ -149,6 +186,8 @@
 			dependencies = (
 				536CF695195526A800AA16A4 /* PBXTargetDependency */,
 				536CF6A41955312300AA16A4 /* PBXTargetDependency */,
+				536CF6A61955312300AA16A4 /* PBXTargetDependency */,
+				536CF6B0195544A100AA16A4 /* PBXTargetDependency */,
 			);
 			name = BrowseOverflowTests;
 			productName = BrowseOverflowTests;
@@ -216,7 +255,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				536CF6B719554BF400AA16A4 /* Person.swift in Sources */,
+				536CF6B21955456300AA16A4 /* Question.swift in Sources */,
 				536CF689195526A800AA16A4 /* DetailViewController.swift in Sources */,
+				536CF6AB195535DB00AA16A4 /* Topic.swift in Sources */,
 				536CF687195526A800AA16A4 /* MasterViewController.swift in Sources */,
 				536CF685195526A800AA16A4 /* AppDelegate.swift in Sources */,
 			);
@@ -226,6 +268,12 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				536CF6B819554BF400AA16A4 /* Person.swift in Sources */,
+				536CF6A91955344200AA16A4 /* TopicTests.swift in Sources */,
+				536CF6B31955456300AA16A4 /* Question.swift in Sources */,
+				536CF6AC195535DB00AA16A4 /* Topic.swift in Sources */,
+				536CF6AE1955446000AA16A4 /* QuestionTests.swift in Sources */,
+				536CF6B519554AAE00AA16A4 /* PersonTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -241,6 +289,16 @@
 			isa = PBXTargetDependency;
 			target = 536CF67E195526A800AA16A4 /* BrowseOverflow */;
 			targetProxy = 536CF6A31955312300AA16A4 /* PBXContainerItemProxy */;
+		};
+		536CF6A61955312300AA16A4 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 536CF67E195526A800AA16A4 /* BrowseOverflow */;
+			targetProxy = 536CF6A51955312300AA16A4 /* PBXContainerItemProxy */;
+		};
+		536CF6B0195544A100AA16A4 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 536CF67E195526A800AA16A4 /* BrowseOverflow */;
+			targetProxy = 536CF6AF195544A100AA16A4 /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
 
@@ -361,6 +419,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/BrowseOverflow.app/BrowseOverflow";
+				CLANG_ENABLE_MODULES = YES;
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(SDKROOT)/Developer/Library/Frameworks",
 					"$(inherited)",
@@ -373,6 +432,8 @@
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				METAL_ENABLE_DEBUG_INFO = YES;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "BrowseOverflowTests/BrowseOverflowTests-Bridging-Header.h";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				TEST_HOST = "$(BUNDLE_LOADER)";
 			};
 			name = Debug;
@@ -381,6 +442,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/BrowseOverflow.app/BrowseOverflow";
+				CLANG_ENABLE_MODULES = YES;
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(SDKROOT)/Developer/Library/Frameworks",
 					"$(inherited)",
@@ -389,6 +451,7 @@
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				METAL_ENABLE_DEBUG_INFO = NO;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "BrowseOverflowTests/BrowseOverflowTests-Bridging-Header.h";
 				TEST_HOST = "$(BUNDLE_LOADER)";
 			};
 			name = Release;

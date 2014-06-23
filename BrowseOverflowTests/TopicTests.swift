@@ -23,4 +23,12 @@ class TopicTests: XCTestCase {
 //  func testForAListOfQuestions(){
 //    XCTAssertTrue(newTopic.recentQuestions is Array, "Topics should provide a list of recent questions")
 //  }
+  func testForInitiallyEmptyQuestionList(){
+    XCTAssertEqual(newTopic.recentQuestions.count, 0, "No questions added yet, count should be 0")
+  }
+  func testAddingQuestionsToTheList(){
+    var question = Question()
+    newTopic.addQuestion(question: question)
+    XCTAssertEqual(newTopic.recentQuestions.count, 1, "Add a question, and the count of questions should go up")
+  }
 }

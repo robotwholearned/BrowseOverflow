@@ -28,7 +28,7 @@ class TopicTests: XCTestCase {
   }
   func testAddingQuestionsToTheList(){
     var question = Question()
-    newTopic.addQuestion(question: question)
+    newTopic.addQuestion(question)
     XCTAssertEqual(newTopic.recentQuestions.count, 1, "Add a question, and the count of questions should go up")
   }
 }

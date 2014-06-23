@@ -11,10 +11,20 @@ import Foundation
 class Topic{
   var name: String
   var tag: String
-  var recentQuestions: Array<AnyObject> = []
+  var questions: Array <Question> = []
   
   init(name: String, tag: String){
     self.name = name
     self.tag = tag
+  }
+  
+  func addQuestion(question: Question){
+    questions.append(question)
+  }
+  
+  var recentQuestions: Array<AnyObject>{
+    get{
+      return self.questions
+    }
   }
 }

@@ -41,7 +41,7 @@ class TopicTests: XCTestCase {
     newTopic.addQuestion(q1)
     newTopic.addQuestion(q2)
     
-    XCTAssertEqualObjects(newTopic.recentQuestions[0].date, q1.date, "First date should match first questions date")
+    XCTAssertEqualObjects(newTopic.recentQuestions[0].date, q2.date, "First date should match first questions date")
     
   }
 }

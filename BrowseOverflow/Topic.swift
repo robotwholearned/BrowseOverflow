@@ -22,9 +22,13 @@ class Topic{
     questions += questionToAdd
   }
   
+  func sortQuestions(q1: Question, q2: Question) -> Bool {
+    return q1.date.timeIntervalSinceReferenceDate > q2.date.timeIntervalSinceReferenceDate
+  }
+
   var recentQuestions: Array<Question>{
     get{
-      return self.questions
+      return sort(self.questions, sortQuestions)
     }
   }
 }

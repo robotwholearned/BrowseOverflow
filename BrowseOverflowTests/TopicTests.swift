@@ -19,10 +19,6 @@ class TopicTests: XCTestCase {
   func testThatTopicHasATag(){
     XCTAssertEqualObjects(newTopic.tag, "iphone", "topics should have tags")
   }
-  //'is' test is always true, because of type saftey in Swift *yay!
-  //  func testForAListOfQuestions(){
-  //    XCTAssertTrue(newTopic.recentQuestions is Array, "Topics should provide a list of recent questions")
-  //  }
   func testForInitiallyEmptyQuestionList(){
     XCTAssertEqual(newTopic.recentQuestions.count, 0, "No questions added yet, count should be 0")
   }
@@ -43,5 +39,12 @@ class TopicTests: XCTestCase {
     
     XCTAssertEqualObjects(newTopic.recentQuestions[0].date, q2.date, "Later date should appear first in the list")
     
+  }
+  func testLimitOFTwentyQuestions(){
+    var q1 = Question()
+    for i in 0..25{
+      self.newTopic.addQuestion(q1)
+    }
+    XCTAssertTrue((newTopic.recentQuestions.count < 21), "There should never be more than 20 questions")
   }
 }

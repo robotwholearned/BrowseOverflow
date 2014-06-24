@@ -18,11 +18,11 @@ class Topic{
     self.tag = tag
   }
   
-  func addQuestion(question: Question){
-    questions.append(question)
+  func addQuestion(questionToAdd: Question){
+    questions += questionToAdd
   }
   
-  var recentQuestions: Array<AnyObject>{
+  var recentQuestions: Array<Question>{
     get{
       return self.questions
     }

@@ -22,6 +22,8 @@
 		536CF6B719554BF400AA16A4 /* Person.swift in Sources */ = {isa = PBXBuildFile; fileRef = 536CF6B619554BF400AA16A4 /* Person.swift */; };
 		536CF6B819554BF400AA16A4 /* Person.swift in Sources */ = {isa = PBXBuildFile; fileRef = 536CF6B619554BF400AA16A4 /* Person.swift */; };
 		53E74711195C8F4D00A3A949 /* AnswersTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 53E74710195C8F4D00A3A949 /* AnswersTests.swift */; };
+		53E74713195C8F9900A3A949 /* Answer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 53E74712195C8F9900A3A949 /* Answer.swift */; };
+		53E74714195C8F9900A3A949 /* Answer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 53E74712195C8F9900A3A949 /* Answer.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -73,6 +75,7 @@
 		536CF6B419554AAE00AA16A4 /* PersonTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = PersonTests.swift; path = BrowseOverflowTests/PersonTests.swift; sourceTree = SOURCE_ROOT; };
 		536CF6B619554BF400AA16A4 /* Person.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Person.swift; sourceTree = "<group>"; };
 		53E74710195C8F4D00A3A949 /* AnswersTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AnswersTests.swift; sourceTree = "<group>"; };
+		53E74712195C8F9900A3A949 /* Answer.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Answer.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -117,6 +120,7 @@
 				536CF684195526A800AA16A4 /* AppDelegate.swift */,
 				536CF6B619554BF400AA16A4 /* Person.swift */,
 				536CF6AA195535DB00AA16A4 /* Topic.swift */,
+				53E74712195C8F9900A3A949 /* Answer.swift */,
 				536CF6B11955456300AA16A4 /* Question.swift */,
 				536CF686195526A800AA16A4 /* MasterViewController.swift */,
 				536CF688195526A800AA16A4 /* DetailViewController.swift */,
@@ -261,6 +265,7 @@
 				536CF6B719554BF400AA16A4 /* Person.swift in Sources */,
 				536CF6B21955456300AA16A4 /* Question.swift in Sources */,
 				536CF689195526A800AA16A4 /* DetailViewController.swift in Sources */,
+				53E74713195C8F9900A3A949 /* Answer.swift in Sources */,
 				536CF6AB195535DB00AA16A4 /* Topic.swift in Sources */,
 				536CF687195526A800AA16A4 /* MasterViewController.swift in Sources */,
 				536CF685195526A800AA16A4 /* AppDelegate.swift in Sources */,
@@ -278,6 +283,7 @@
 				536CF6AC195535DB00AA16A4 /* Topic.swift in Sources */,
 				536CF6AE1955446000AA16A4 /* QuestionTests.swift in Sources */,
 				536CF6B519554AAE00AA16A4 /* PersonTests.swift in Sources */,
+				53E74714195C8F9900A3A949 /* Answer.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

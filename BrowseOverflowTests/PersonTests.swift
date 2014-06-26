@@ -1,5 +1,5 @@
 //
-//  PearsonTests.swift
+//  PersonTests.swift
 //  BrowseOverflow
 //
 //  Created by Cassandra Sandquist on 2014-06-20.

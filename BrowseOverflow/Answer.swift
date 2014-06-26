@@ -14,10 +14,10 @@ class Answer{
   var score: Int
   var accepted: Bool
   
-  init(text: String, person:Person, score: Int){
+  init(text: String, score: Int, person:Person){
     self.text = text
-    self.person = person
     self.score = score
     self.accepted = false
+    self.person = person
   }
 }

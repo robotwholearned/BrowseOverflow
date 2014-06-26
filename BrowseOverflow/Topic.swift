@@ -28,7 +28,13 @@ class Topic{
 
   var recentQuestions: Array<Question>{
     get{
-      return sort(self.questions, sortQuestions)
+      // either return the first 20 q's always or remove the 21st if too many get added
+      var sortedQuestions = sort(self.questions, sortQuestions)
+      //var limitedSortedQuestions: Array<Question>
+      if sortedQuestions.count >= 21{
+        sortedQuestions = Array(sortedQuestions[0...19])
+        }
+      return sortedQuestions
     }
   }
 }

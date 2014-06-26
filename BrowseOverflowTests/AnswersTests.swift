@@ -9,27 +9,30 @@
 import XCTest
 
 class AnswersTests: XCTestCase {
-
-    override func setUp() {
-        super.setUp()
-        // Put setup code here. This method is called before the invocation of each test method in the class.
-    }
-    
-    override func tearDown() {
-        // Put teardown code here. This method is called after the invocation of each test method in the class.
-        super.tearDown()
-    }
-
-    func testExample() {
-        // This is an example of a functional test case.
-        XCTAssert(true, "Pass")
-    }
-
-    func testPerformanceExample() {
-        // This is an example of a performance test case.
-        self.measureBlock() {
-            // Put the code you want to measure the time of here.
-        }
-    }
-
+  var person = Person(name:"Cassandra Sandquist ", avatarLocation: "https://www.gravatar.com/avatar/4859f078c642a60853c3d2752cbfee4f?s=128&d=identicon&r=PG")
+  
+  var answer = Answer(text: "The answer is 42", person: Person(name:"Cassandra Sandquist ", avatarLocation: "https://www.gravatar.com/avatar/4859f078c642a60853c3d2752cbfee4f?s=128&d=identicon&r=PG") , score: 42)
+  
+  func testAnswerHasSomeText(){
+    XCTAssertEqualObjects(answer.text, "The answer is 42", "Answers need to contain some text")
+  }
+  
+  func testThatSomeoneProvidedTheAnswer(){
+    //compares that the two names are the same
+    XCTAssertEqualObjects(self.answer.person.name, self.person.name, "A person gave this answer")
+  }
+  
+  func testAnswersNotAcceptedByDefault(){
+    XCTAssertFalse(self.answer.accepted, "Answer not accepted by default")
+  }
+  
+  func testAnswerCanBeAccepted(){
+    self.answer.accepted = true
+    XCTAssertTrue(self.answer.accepted, "Answer can be accepted")
+  }
+  
+  func testAnswerHasAScore(){
+    XCTAssertTrue(self.answer.score == 42, "Answer's score can be retrieved")
+  }
+  
 }

@@ -21,6 +21,7 @@
 		536CF6B519554AAE00AA16A4 /* PersonTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 536CF6B419554AAE00AA16A4 /* PersonTests.swift */; };
 		536CF6B719554BF400AA16A4 /* Person.swift in Sources */ = {isa = PBXBuildFile; fileRef = 536CF6B619554BF400AA16A4 /* Person.swift */; };
 		536CF6B819554BF400AA16A4 /* Person.swift in Sources */ = {isa = PBXBuildFile; fileRef = 536CF6B619554BF400AA16A4 /* Person.swift */; };
+		53E74711195C8F4D00A3A949 /* AnswersTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 53E74710195C8F4D00A3A949 /* AnswersTests.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -71,6 +72,7 @@
 		536CF6B11955456300AA16A4 /* Question.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Question.swift; sourceTree = "<group>"; };
 		536CF6B419554AAE00AA16A4 /* PersonTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = PersonTests.swift; path = BrowseOverflowTests/PersonTests.swift; sourceTree = SOURCE_ROOT; };
 		536CF6B619554BF400AA16A4 /* Person.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Person.swift; sourceTree = "<group>"; };
+		53E74710195C8F4D00A3A949 /* AnswersTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AnswersTests.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -139,6 +141,7 @@
 				536CF6B419554AAE00AA16A4 /* PersonTests.swift */,
 				536CF6AD1955446000AA16A4 /* QuestionTests.swift */,
 				536CF6A81955344200AA16A4 /* TopicTests.swift */,
+				53E74710195C8F4D00A3A949 /* AnswersTests.swift */,
 				536CF697195526A800AA16A4 /* Supporting Files */,
 			);
 			path = BrowseOverflowTests;
@@ -269,6 +272,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				536CF6B819554BF400AA16A4 /* Person.swift in Sources */,
+				53E74711195C8F4D00A3A949 /* AnswersTests.swift in Sources */,
 				536CF6A91955344200AA16A4 /* TopicTests.swift in Sources */,
 				536CF6B31955456300AA16A4 /* Question.swift in Sources */,
 				536CF6AC195535DB00AA16A4 /* Topic.swift in Sources */,
@@ -475,6 +479,7 @@
 				536CF69F195526A800AA16A4 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		536CF6A0195526A800AA16A4 /* Build configuration list for PBXNativeTarget "BrowseOverflowTests" */ = {
 			isa = XCConfigurationList;
@@ -483,6 +488,7 @@
 				536CF6A2195526A800AA16A4 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

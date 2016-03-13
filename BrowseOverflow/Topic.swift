@@ -17,5 +17,7 @@ class Topic: NSObject {
         self.tag = tag
     }
 
+    func recentQuestions() -> Array<Any> {
+        return Array()
     }
 }

@@ -36,4 +36,10 @@ class TopicTests: XCTestCase {
     func testThatTopicHasATagAndName() {
         XCTAssertNotNil(topic, "should be able to create a topic instance with a name and tag")
     }
+
+    func testForAListOfQuestions() {
+        let recentQuestions = topic!.recentQuestions()
+        XCTAssertFalse(recentQuestions.isEmpty, "Topics should provide a list of recent questions")
+    }
+    
 }

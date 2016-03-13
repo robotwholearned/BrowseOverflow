@@ -7,6 +7,7 @@
 //
 
 import XCTest
+@testable import BrowseOverflow
 
 class QuestionTests: XCTestCase {
     
@@ -18,6 +19,11 @@ class QuestionTests: XCTestCase {
     override func tearDown() {
         // Put teardown code here. This method is called after the invocation of each test method in the class.
         super.tearDown()
+    }
+
+    func testQuestionHasADate() {
+        let question = Question()
+        XCTAssertTrue(question.date() != nil, "Questions need to provide a date")
     }
     
 }

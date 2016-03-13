@@ -14,6 +14,7 @@
 		939CD5ED1C95B30B0047EE8B /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 939CD5EC1C95B30B0047EE8B /* Assets.xcassets */; };
 		939CD5F01C95B30B0047EE8B /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 939CD5EE1C95B30B0047EE8B /* LaunchScreen.storyboard */; };
 		939CD6071C95B4840047EE8B /* TopicTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 939CD6061C95B4840047EE8B /* TopicTests.swift */; };
+		939CD6091C95B58C0047EE8B /* Topic.swift in Sources */ = {isa = PBXBuildFile; fileRef = 939CD6081C95B58C0047EE8B /* Topic.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -39,6 +40,7 @@
 		939CD5FC1C95B30C0047EE8B /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		939CD6051C95B4840047EE8B /* BrowseOverflowTests-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "BrowseOverflowTests-Bridging-Header.h"; sourceTree = "<group>"; };
 		939CD6061C95B4840047EE8B /* TopicTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TopicTests.swift; sourceTree = "<group>"; };
+		939CD6081C95B58C0047EE8B /* Topic.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Topic.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -87,6 +89,7 @@
 				939CD5EC1C95B30B0047EE8B /* Assets.xcassets */,
 				939CD5EE1C95B30B0047EE8B /* LaunchScreen.storyboard */,
 				939CD5F11C95B30B0047EE8B /* Info.plist */,
+				939CD6081C95B58C0047EE8B /* Topic.swift */,
 			);
 			path = BrowseOverflow;
 			sourceTree = "<group>";
@@ -203,6 +206,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				939CD5E81C95B30B0047EE8B /* DetailViewController.swift in Sources */,
+				939CD6091C95B58C0047EE8B /* Topic.swift in Sources */,
 				939CD5E61C95B30B0047EE8B /* MasterViewController.swift in Sources */,
 				939CD5E41C95B30B0047EE8B /* AppDelegate.swift in Sources */,
 			);

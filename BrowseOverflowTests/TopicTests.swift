@@ -18,12 +18,6 @@ class TopicTests: XCTestCase {
         // Put setup code here. This method is called before the invocation of each test method in the class.
         topic = Topic(name: "iPhone", tag: "iphone")
     }
-    
-    override func tearDown() {
-        // Put teardown code here. This method is called after the invocation of each test method in the class.
-        super.tearDown()
-        topic = nil
-    }
 
     func testThatTopicExists() {
         XCTAssertNotNil(topic, "should be able to create a topic instance")

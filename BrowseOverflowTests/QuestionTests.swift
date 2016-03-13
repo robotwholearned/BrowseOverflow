@@ -21,11 +21,6 @@ class QuestionTests: XCTestCase {
         question?.score = 42
         question?.title = "Do iPhones also dream of electric sheep?"
     }
-    
-    override func tearDown() {
-        // Put teardown code here. This method is called after the invocation of each test method in the class.
-        super.tearDown()
-    }
 
     func testQuestionHasADate() {
 

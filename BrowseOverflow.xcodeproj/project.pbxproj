@@ -97,8 +97,7 @@
 				939CD5EC1C95B30B0047EE8B /* Assets.xcassets */,
 				939CD5EE1C95B30B0047EE8B /* LaunchScreen.storyboard */,
 				939CD5F11C95B30B0047EE8B /* Info.plist */,
-				939CD6081C95B58C0047EE8B /* Topic.swift */,
-				939CD60C1C95D5EF0047EE8B /* Question.swift */,
+				939CD6131C95DB990047EE8B /* Model */,
 			);
 			path = BrowseOverflow;
 			sourceTree = "<group>";
@@ -106,13 +105,31 @@
 		939CD5F91C95B30C0047EE8B /* BrowseOverflowTests */ = {
 			isa = PBXGroup;
 			children = (
-				939CD5FC1C95B30C0047EE8B /* Info.plist */,
 				939CD6061C95B4840047EE8B /* TopicTests.swift */,
-				939CD6051C95B4840047EE8B /* BrowseOverflowTests-Bridging-Header.h */,
 				939CD60A1C95D57B0047EE8B /* QuestionTests.swift */,
 				939CD60E1C95D93F0047EE8B /* PersonTests.swift */,
+				939CD6101C95DA680047EE8B /* Extra */,
 			);
 			path = BrowseOverflowTests;
+			sourceTree = "<group>";
+		};
+		939CD6101C95DA680047EE8B /* Extra */ = {
+			isa = PBXGroup;
+			children = (
+				939CD5FC1C95B30C0047EE8B /* Info.plist */,
+				939CD6051C95B4840047EE8B /* BrowseOverflowTests-Bridging-Header.h */,
+			);
+			name = Extra;
+			sourceTree = "<group>";
+		};
+		939CD6131C95DB990047EE8B /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				939CD6081C95B58C0047EE8B /* Topic.swift */,
+				939CD60C1C95D5EF0047EE8B /* Question.swift */,
+				939CD6111C95DB940047EE8B /* Person.swift */,
+			);
+			name = Model;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */

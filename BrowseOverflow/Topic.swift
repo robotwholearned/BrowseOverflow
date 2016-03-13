@@ -6,6 +6,16 @@
 //  Copyright © 2016 robotwholearned. All rights reserved.
 //
 
-class Topic {
+import Foundation
 
+class Topic: NSObject {
+    var name: String?
+
+    convenience override init() {
+        self.init(name: "empty topic name")
+    }
+
+    init(name: String) {
+        self.name = name
+    }
 }

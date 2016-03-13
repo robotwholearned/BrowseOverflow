@@ -13,6 +13,7 @@
 		939CD5EB1C95B30B0047EE8B /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 939CD5E91C95B30B0047EE8B /* Main.storyboard */; };
 		939CD5ED1C95B30B0047EE8B /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 939CD5EC1C95B30B0047EE8B /* Assets.xcassets */; };
 		939CD5F01C95B30B0047EE8B /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 939CD5EE1C95B30B0047EE8B /* LaunchScreen.storyboard */; };
+		939CD6071C95B4840047EE8B /* TopicTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 939CD6061C95B4840047EE8B /* TopicTests.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -36,6 +37,8 @@
 		939CD5F11C95B30B0047EE8B /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		939CD5F61C95B30C0047EE8B /* BrowseOverflowTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = BrowseOverflowTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		939CD5FC1C95B30C0047EE8B /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		939CD6051C95B4840047EE8B /* BrowseOverflowTests-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "BrowseOverflowTests-Bridging-Header.h"; sourceTree = "<group>"; };
+		939CD6061C95B4840047EE8B /* TopicTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TopicTests.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -92,6 +95,8 @@
 			isa = PBXGroup;
 			children = (
 				939CD5FC1C95B30C0047EE8B /* Info.plist */,
+				939CD6061C95B4840047EE8B /* TopicTests.swift */,
+				939CD6051C95B4840047EE8B /* BrowseOverflowTests-Bridging-Header.h */,
 			);
 			path = BrowseOverflowTests;
 			sourceTree = "<group>";
@@ -207,6 +212,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				939CD6071C95B4840047EE8B /* TopicTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -349,10 +355,13 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				BUNDLE_LOADER = "$(TEST_HOST)";
+				CLANG_ENABLE_MODULES = YES;
 				INFOPLIST_FILE = BrowseOverflowTests/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = edu.robotwhoelarned.self.BrowseOverflowTests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "BrowseOverflowTests/BrowseOverflowTests-Bridging-Header.h";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/BrowseOverflow.app/BrowseOverflow";
 			};
 			name = Debug;
@@ -361,10 +370,12 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				BUNDLE_LOADER = "$(TEST_HOST)";
+				CLANG_ENABLE_MODULES = YES;
 				INFOPLIST_FILE = BrowseOverflowTests/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = edu.robotwhoelarned.self.BrowseOverflowTests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "BrowseOverflowTests/BrowseOverflowTests-Bridging-Header.h";
 				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/BrowseOverflow.app/BrowseOverflow";
 			};
 			name = Release;

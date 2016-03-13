@@ -13,7 +13,6 @@
 		939CD5EB1C95B30B0047EE8B /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 939CD5E91C95B30B0047EE8B /* Main.storyboard */; };
 		939CD5ED1C95B30B0047EE8B /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 939CD5EC1C95B30B0047EE8B /* Assets.xcassets */; };
 		939CD5F01C95B30B0047EE8B /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 939CD5EE1C95B30B0047EE8B /* LaunchScreen.storyboard */; };
-		939CD5FB1C95B30C0047EE8B /* BrowseOverflowTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 939CD5FA1C95B30C0047EE8B /* BrowseOverflowTests.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -36,7 +35,6 @@
 		939CD5EF1C95B30B0047EE8B /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		939CD5F11C95B30B0047EE8B /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		939CD5F61C95B30C0047EE8B /* BrowseOverflowTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = BrowseOverflowTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
-		939CD5FA1C95B30C0047EE8B /* BrowseOverflowTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BrowseOverflowTests.swift; sourceTree = "<group>"; };
 		939CD5FC1C95B30C0047EE8B /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -93,7 +91,6 @@
 		939CD5F91C95B30C0047EE8B /* BrowseOverflowTests */ = {
 			isa = PBXGroup;
 			children = (
-				939CD5FA1C95B30C0047EE8B /* BrowseOverflowTests.swift */,
 				939CD5FC1C95B30C0047EE8B /* Info.plist */,
 			);
 			path = BrowseOverflowTests;
@@ -210,7 +207,6 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				939CD5FB1C95B30C0047EE8B /* BrowseOverflowTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -392,6 +388,7 @@
 				939CD6011C95B30C0047EE8B /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		939CD6021C95B30C0047EE8B /* Build configuration list for PBXNativeTarget "BrowseOverflowTests" */ = {
 			isa = XCConfigurationList;
@@ -400,6 +397,7 @@
 				939CD6041C95B30C0047EE8B /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

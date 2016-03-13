@@ -9,13 +9,13 @@
 import Foundation
 
 class Topic: NSObject {
-    var name: String?
+    var name: String
+    var tag: String
 
-    convenience override init() {
-        self.init(name: "empty topic name")
+    init(name: String, tag: String) {
+        self.name = name
+        self.tag = tag
     }
 
-    init(name: String) {
-        self.name = name
     }
 }

@@ -11,5 +11,7 @@ import Foundation
 class Question {
 
     var date: NSDate?
+    var score: Int?
+    var title: String?
 
 }

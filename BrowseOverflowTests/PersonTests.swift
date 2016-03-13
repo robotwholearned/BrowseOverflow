@@ -14,10 +14,10 @@ class PersonTests: XCTestCase {
 
   
   func testThatPersonHasTheRightName(){
-    XCTAssertEqualObjects(person.name, "Cassandra Sandquist ", "person needs a name")
+    XCTAssertEqual(person.name, "Cassandra Sandquist ", "person needs a name")
   }
   func testThatPersonHasAnAvatarURL(){
-    XCTAssertEqualObjects(person.avatarLocation.absoluteString, "https://www.gravatar.com/avatar/4859f078c642a60853c3d2752cbfee4f?s=128&d=identicon&r=PG", "The persons avatar should be represented by an url")
+    XCTAssertEqual(person.avatarLocation.absoluteString, "https://www.gravatar.com/avatar/4859f078c642a60853c3d2752cbfee4f?s=128&d=identicon&r=PG", "The persons avatar should be represented by an url")
   }
   
 }

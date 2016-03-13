@@ -21,7 +21,7 @@ class QuestionTests: XCTestCase {
   }
 
   func testQuestionHasDate(){
-    XCTAssertEqualObjects(question.date, testDate, "Questions needs to provide a date")
+    XCTAssertEqual(question.date, testDate, "Questions needs to provide a date")
   }
   
   func testQuestionKeepsScore(){

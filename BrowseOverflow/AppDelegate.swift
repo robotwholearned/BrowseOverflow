@@ -13,14 +13,15 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
                             
   var window: UIWindow?
 
+    func application(application: UIApplication, didFinishLaunchingWithOptions launchOptions: [NSObject : AnyObject]?) -> Bool {
+        // Override point for customization after application launch.
+        let splitViewController = self.window!.rootViewController as! UISplitViewController
+        let navigationController = splitViewController.viewControllers[splitViewController.viewControllers.endIndex-1] as! UINavigationController
+        splitViewController.delegate = navigationController.topViewController as! DetailViewController
+        return true
 
-  func application(application: UIApplication, didFinishLaunchingWithOptions launchOptions: NSDictionary?) -> Bool {
-    // Override point for customization after application launch.
-    let splitViewController = self.window!.rootViewController as UISplitViewController
-    let navigationController = splitViewController.viewControllers[splitViewController.viewControllers.endIndex-1] as UINavigationController
-    splitViewController.delegate = navigationController.topViewController as DetailViewController
-    return true
-  }
+
+    }
 
   func applicationWillResignActive(application: UIApplication) {
     // Sent when the application is about to move from active to inactive state. This can occur for certain types of temporary interruptions (such as an incoming phone call or SMS message) or when the user quits the application and it begins the transition to the background state.

@@ -19,7 +19,7 @@ class Topic{
   }
   
   func addQuestion(questionToAdd: Question){
-    questions += questionToAdd
+    questions.append(questionToAdd)
   }
   
   func sortQuestions(q1: Question, q2: Question) -> Bool {
@@ -29,11 +29,11 @@ class Topic{
   var recentQuestions: Array<Question>{
     get{
       // either return the first 20 q's always or remove the 21st if too many get added
-      var sortedQuestions = sort(self.questions, sortQuestions)
-      if sortedQuestions.count >= 21{
-        sortedQuestions = Array(sortedQuestions[0...19])
+        questions.sortInPlace(sortQuestions)
+        if questions.count >= 21{
+        questions = Array(questions[0...19])
       }
-      return sortedQuestions
+      return questions
     }
   }
 }

@@ -14,7 +14,7 @@ class Person{
   
   init(name: String, avatarLocation: String){
     self.name = name
-    self.avatarLocation = NSURL(string: avatarLocation)
+    self.avatarLocation = NSURL(string: avatarLocation)!
   }
   
 }

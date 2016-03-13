@@ -17,6 +17,7 @@
 		939CD6091C95B58C0047EE8B /* Topic.swift in Sources */ = {isa = PBXBuildFile; fileRef = 939CD6081C95B58C0047EE8B /* Topic.swift */; };
 		939CD60B1C95D57B0047EE8B /* QuestionTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 939CD60A1C95D57B0047EE8B /* QuestionTests.swift */; };
 		939CD60D1C95D5EF0047EE8B /* Question.swift in Sources */ = {isa = PBXBuildFile; fileRef = 939CD60C1C95D5EF0047EE8B /* Question.swift */; };
+		939CD60F1C95D93F0047EE8B /* PersonTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 939CD60E1C95D93F0047EE8B /* PersonTests.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -45,6 +46,7 @@
 		939CD6081C95B58C0047EE8B /* Topic.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Topic.swift; sourceTree = "<group>"; };
 		939CD60A1C95D57B0047EE8B /* QuestionTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = QuestionTests.swift; sourceTree = "<group>"; };
 		939CD60C1C95D5EF0047EE8B /* Question.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Question.swift; sourceTree = "<group>"; };
+		939CD60E1C95D93F0047EE8B /* PersonTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PersonTests.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -106,6 +108,7 @@
 				939CD6061C95B4840047EE8B /* TopicTests.swift */,
 				939CD6051C95B4840047EE8B /* BrowseOverflowTests-Bridging-Header.h */,
 				939CD60A1C95D57B0047EE8B /* QuestionTests.swift */,
+				939CD60E1C95D93F0047EE8B /* PersonTests.swift */,
 			);
 			path = BrowseOverflowTests;
 			sourceTree = "<group>";
@@ -224,6 +227,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				939CD6071C95B4840047EE8B /* TopicTests.swift in Sources */,
+				939CD60F1C95D93F0047EE8B /* PersonTests.swift in Sources */,
 				939CD60B1C95D57B0047EE8B /* QuestionTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

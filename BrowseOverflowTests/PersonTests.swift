@@ -11,13 +11,21 @@ import XCTest
 
 class PersonTests: XCTestCase {
 
+    var person: Person?
+    
     override func setUp() {
         super.setUp()
         // Put setup code here. This method is called before the invocation of each test method in the class.
+        person = Person(name: "Graham Lee", avatarURL: "http://example.com/avatar.png")
+
     }
-    
-    override func tearDown() {
-        // Put teardown code here. This method is called after the invocation of each test method in the class.
-        super.tearDown()
+
+    func testThatAPersonHasTheRightName() {
+        XCTAssertEqual(person!.name, "Graham Lee", "expecting a person to provide its name")
+    }
+
+    func testThatPersonHasAnAvatarURL() {
+        let url = person!.avatarURL
+        XCTAssertEqual(url!.absoluteString, "http://example.com/avatar.png", "The Person's avatar should be represented by a URL")
     }
 }

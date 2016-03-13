@@ -31,5 +31,10 @@ class TopicTests: XCTestCase {
             // Put the code you want to measure the time of here.
         }
     }
+
+    func testThatTopicExists() {
+        let topic = Topic()
+        XCTAssertNotNil(topic, "should be able to create a topic instance")
+    }
     
 }

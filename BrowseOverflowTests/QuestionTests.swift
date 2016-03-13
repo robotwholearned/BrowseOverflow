@@ -23,7 +23,8 @@ class QuestionTests: XCTestCase {
 
     func testQuestionHasADate() {
         let question = Question()
-        XCTAssertTrue(question.date() != nil, "Questions need to provide a date")
+        question.date = NSDate.distantPast()
+        XCTAssertEqual(question.date, NSDate.distantPast(), "Questions need to provide a date")
     }
     
 }

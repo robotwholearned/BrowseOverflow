@@ -10,9 +10,6 @@ import Foundation
 
 class Question {
 
-    func date() -> NSDate? {
-        return NSDate()
-    }
-
+    var date: NSDate?
 
 }

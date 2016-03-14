@@ -11,13 +11,19 @@ import Foundation
 class Topic: NSObject {
     var name: String
     var tag: String
+    var questions: [Question]
 
     init(name: String, tag: String) {
         self.name = name
         self.tag = tag
+        questions = [Question]()
     }
 
-    func recentQuestions() -> Array<Any> {
-        return Array()
+    func recentQuestions() -> [Question] {
+        return questions
+    }
+
+    func addQuestion(questionToAdd: Question) {
+        questions.append(questionToAdd)
     }
 }

@@ -31,9 +31,16 @@ class TopicTests: XCTestCase {
         XCTAssertNotNil(topic, "should be able to create a topic instance with a name and tag")
     }
 
-    func testForAListOfQuestions() {
-//        let recentQuestions = topic!.recentQuestions()
-//        XCTAssertFalse(recentQuestions.isEmpty, "Topics should provide a list of recent questions")
+    func testForInitiallyEmptyQuestionsList() {
+        let questions = topic?.recentQuestions()
+        XCTAssertTrue(questions!.isEmpty, "No questions added yet, count should be zero")
+    }
+
+    func testAddingQuestionToList() {
+        let q = Question()
+        topic!.addQuestion(q)
+        let questions = topic?.recentQuestions()
+        XCTAssertEqual(questions!.count, 1, "count of questions should go up after adding a question")
     }
     
 }

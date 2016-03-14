@@ -42,5 +42,20 @@ class TopicTests: XCTestCase {
         let questions = topic?.recentQuestions()
         XCTAssertEqual(questions!.count, 1, "count of questions should go up after adding a question")
     }
-    
+    func testQuestionsAreChronological() {
+        let q1 = Question()
+        let q2 = Question()
+
+        q1.date = NSDate.distantPast()
+        q2.date = NSDate.distantFuture()
+
+        topic?.addQuestion(q1)
+        topic?.addQuestion(q2)
+
+        let questions = topic!.questions
+        let listedFirst = questions[0]
+
+        XCTAssertEqual(q2.date, listedFirst.date,
+            "The later question should appear first in the list")
+    }
 }

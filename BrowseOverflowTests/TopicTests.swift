@@ -42,6 +42,7 @@ class TopicTests: XCTestCase {
         let questions = topic?.recentQuestions()
         XCTAssertEqual(questions!.count, 1, "count of questions should go up after adding a question")
     }
+
     func testQuestionsAreChronological() {
         let q1 = Question()
         let q2 = Question()
@@ -57,5 +58,16 @@ class TopicTests: XCTestCase {
 
         XCTAssertEqual(q2.date, listedFirst.date,
             "The later question should appear first in the list")
+    }
+
+    func testLimitOfTwentyQuestions() {
+        let q1 = Question()
+        q1.date = NSDate.distantFuture()
+        for _ in 0...21 {
+            topic?.addQuestion(q1)
+        }
+
+        XCTAssertTrue(topic?.recentQuestions().count == 20, "There should only be a max of 20 questions to a topic")
+
     }
 }

@@ -52,7 +52,7 @@ class TopicTests: XCTestCase {
         topic?.addQuestion(q1)
         topic?.addQuestion(q2)
 
-        let questions = topic!.questions
+        let questions = topic!.recentQuestions()
         let listedFirst = questions[0]
 
         XCTAssertEqual(q2.date, listedFirst.date,

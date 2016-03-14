@@ -20,7 +20,9 @@ class Topic: NSObject {
     }
 
     func recentQuestions() -> [Question] {
-        return questions
+        return questions.sort({ (obj1, obj2) -> Bool in
+            return obj2.date!.compare(obj1.date!) == NSComparisonResult.OrderedAscending ? true : false
+        })
     }
 
     func addQuestion(questionToAdd: Question) {

@@ -19,10 +19,18 @@ class Topic: NSObject {
         questions = [Question]()
     }
 
-    func recentQuestions() -> [Question] {
-        return questions.sort({ (obj1, obj2) -> Bool in
+    func recentQuestions() -> Array<Question> {
+        let sortedQuestions = questions.sort({ (obj1, obj2) -> Bool in
             return obj2.date!.compare(obj1.date!) == NSComparisonResult.OrderedAscending ? true : false
         })
+
+        if sortedQuestions.count < 21 {
+            return sortedQuestions
+        } else {
+            let arraySlice = sortedQuestions[0..<20]
+            let newArray = Array(arraySlice)
+            return newArray
+        }
     }
 
     func addQuestion(questionToAdd: Question) {
